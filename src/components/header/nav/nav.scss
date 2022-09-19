@@ -1,0 +1,35 @@
+.nav_content{
+  display: flex;
+  justify-content: space-between;
+  nav {
+    opacity: 0;
+    width: 100%;
+    transform: translateY(100%);
+    ul {
+      list-style: none;
+
+      li {
+        background-color: #232323;
+        position: relative;
+        box-sizing: border-box;
+        transition: 300ms;
+        transform: translateX(50%);
+        a {
+          font-size: 2em;
+          padding: 20px;
+          width: 100%;
+          display: inline-block;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #fff;
+        }
+        &:hover{
+          transform: translateX(30px) !important;
+        }
+      }
+    }
+  }
+  .menu_title_display{
+    background-color: #232323;
+  }
+}

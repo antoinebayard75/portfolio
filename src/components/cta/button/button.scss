@@ -1,0 +1,54 @@
+.custom_button{
+  padding: 20px 30px;
+  background-color: #0FFF95;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  &:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    background-color: #055231;
+    z-index: -1;
+    transition: 250ms;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #0FFF95;
+    z-index: -1;
+    transition: 250ms;
+  }
+  span{
+    font-weight: bold;
+    color: #232323;
+    transition: 250ms;
+  }
+  .effect{
+
+  }
+  &:hover{
+    background-color: #055231;
+    span{
+      color: #ffffff;
+    }
+    &:before{
+      top: 10px;
+      left: 10px;
+    }
+    &:after{
+      top: 0;
+      left: 0;
+      box-shadow: 5px 5px 12px -4px rgba(0,0,0,0.48);
+    }
+  }
+
+}
